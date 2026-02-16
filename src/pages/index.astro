@@ -1,0 +1,132 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { groups } from '../data/groups';
+
+// Calculate group totals
+const groupsWithTotals = groups.map(group => {
+  const totalPoints = group.members.reduce((acc, member) => acc + member.points, 0);
+  return { ...group, totalPoints };
+});
+---
+
+<Layout title="EBDV 2026 - Puerto Seguro">
+  <main class="container mx-auto px-4 py-8 pb-20">
+    <!-- Header Section -->
+    <header class="text-center mb-12 relative">
+        <!-- Background decorations could go here -->
+        <h2 class="text-3xl md:text-4xl text-white font-black drop-shadow-[0_2px_2px_rgba(0,0,0,0.5)] mb-2 font-titan tracking-wider">
+            EBDV 2026
+        </h2>
+        <div class="relative inline-block">
+            <h1 class="text-5xl md:text-7xl text-sand-gold font-titan leading-tight drop-shadow-[0_5px_0_#006699] stroke-text">
+                PUERTO<br/>SEGURO
+            </h1>
+        </div>
+        
+        <!-- Decorative Lighthouse/Elements (CSS only representation or placeholders) -->
+        <div class="mt-4 flex justify-center space-x-2">
+            <div class="h-2 w-20 bg-lighthouse-red rounded-full"></div>
+            <div class="h-2 w-20 bg-white rounded-full"></div>
+            <div class="h-2 w-20 bg-lighthouse-red rounded-full"></div>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <div class="max-w-4xl mx-auto space-y-8">
+      {groupsWithTotals.map((group, index) => (
+        <div class="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl overflow-hidden border-4 border-deep-ocean/20 transform transition-all hover:scale-[1.01]">
+          <!-- Group Header -->
+          <div class="bg-deep-ocean p-4 flex justify-between items-center text-white">
+            <h3 class="text-2xl md:text-3xl font-titan tracking-wide flex items-center gap-2">
+              <span class="text-3xl">⚓</span> {group.name}
+            </h3>
+            <div class="flex flex-col items-end">
+                <span class="text-xs uppercase opacity-80 font-bold">Puntos Grupales</span>
+                <span class="text-2xl font-black bg-sand-gold text-deep-ocean px-3 py-1 rounded-lg shadow-md border-2 border-white/30">
+                    {group.totalPoints}
+                </span>
+            </div>
+          </div>
+
+          <!-- Members List -->
+          <div class="p-4 md:p-6">
+            <div class="overflow-x-auto">
+              <table class="w-full min-w-[600px]">
+                <thead>
+                  <tr class="text-left border-b-2 border-sky-100">
+                    <th class="pb-3 pl-2 text-deep-ocean font-bold w-1/3">Tripulante</th>
+                    <th class="pb-3 text-center text-deep-ocean font-bold">Asistencia (L-V)</th>
+                    <th class="pb-3 pr-2 text-right text-deep-ocean font-bold">Puntos</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-sky-50">
+                  {group.members.map((member) => (
+                    <tr class="hover:bg-sky-50/50 transition-colors">
+                      <td class="py-3 pl-2 font-bold text-gray-700">
+                        {member.name}
+                      </td>
+                      <td class="py-3">
+                        <div class="flex justify-center gap-1 md:gap-2">
+                            {/* Attendance Checks */}
+                            <div class="flex flex-col items-center">
+                                <span class="text-[10px] text-gray-400 font-bold mb-1">L</span>
+                                <div class={`w-6 h-6 rounded-full flex items-center justify-center border-2 ${member.attendance.monday ? 'bg-green-500 border-green-600 text-white' : 'bg-gray-100 border-gray-200'}`}>
+                                    {member.attendance.monday && <span class="text-sm">✓</span>}
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <span class="text-[10px] text-gray-400 font-bold mb-1">M</span>
+                                <div class={`w-6 h-6 rounded-full flex items-center justify-center border-2 ${member.attendance.tuesday ? 'bg-green-500 border-green-600 text-white' : 'bg-gray-100 border-gray-200'}`}>
+                                    {member.attendance.tuesday && <span class="text-sm">✓</span>}
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <span class="text-[10px] text-gray-400 font-bold mb-1">M</span>
+                                <div class={`w-6 h-6 rounded-full flex items-center justify-center border-2 ${member.attendance.wednesday ? 'bg-green-500 border-green-600 text-white' : 'bg-gray-100 border-gray-200'}`}>
+                                    {member.attendance.wednesday && <span class="text-sm">✓</span>}
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <span class="text-[10px] text-gray-400 font-bold mb-1">J</span>
+                                <div class={`w-6 h-6 rounded-full flex items-center justify-center border-2 ${member.attendance.thursday ? 'bg-green-500 border-green-600 text-white' : 'bg-gray-100 border-gray-200'}`}>
+                                    {member.attendance.thursday && <span class="text-sm">✓</span>}
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <span class="text-[10px] text-gray-400 font-bold mb-1">V</span>
+                                <div class={`w-6 h-6 rounded-full flex items-center justify-center border-2 ${member.attendance.friday ? 'bg-green-500 border-green-600 text-white' : 'bg-gray-100 border-gray-200'}`}>
+                                    {member.attendance.friday && <span class="text-sm">✓</span>}
+                                </div>
+                            </div>
+                        </div>
+                      </td>
+                      <td class="py-3 pr-2 text-right">
+                        <span class="inline-block bg-sky-100 text-deep-ocean font-black px-3 py-1 rounded-full text-sm">
+                            {member.points} pts
+                        </span>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </main>
+
+  <footer class="text-center py-8 text-deep-ocean/60 text-sm font-bold">
+    <p>© 2026 EBDV Puerto Seguro</p>
+  </footer>
+</Layout>
+
+<style>
+  /* Custom text stroke effect for the title */
+  .stroke-text {
+    -webkit-text-stroke: 2px #005c8a; /* Deep blue stroke */
+    text-shadow: 
+        3px 3px 0px #005c8a,
+        6px 6px 0px rgba(0,0,0,0.1);
+  }
+</style>
