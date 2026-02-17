@@ -26,17 +26,17 @@ export const groups: Group[] = [
       {
         name: "Grace Ayma Poma",
         points: 0,
-        attendance: { monday: true, tuesday: false, wednesday: false, thursday: false, friday: false }
+        attendance: { monday: true, tuesday: true, wednesday: false, thursday: false, friday: false }
       },
       {
         name: "Angela Quiliche Sosa",
-        points: 0,
-        attendance: { monday: true, tuesday: false, wednesday: false, thursday: false, friday: false }
+        points: 20,
+        attendance: { monday: true, tuesday: true, wednesday: false, thursday: false, friday: false }
       },
       {
         name: "Angela Vargas Lopez",
         points: 0,
-        attendance: { monday: true, tuesday: false, wednesday: false, thursday: false, friday: false }
+        attendance: { monday: true, tuesday: true, wednesday: false, thursday: false, friday: false }
       },
       {
         name: "Cielo Felices Rojas",
@@ -56,9 +56,9 @@ export const groups: Group[] = [
         attendance: { monday: true, tuesday: false, wednesday: false, thursday: false, friday: false }
       },
       {
-        name: "Luz",
+        name: "Luz Maricielo Icanaque Serna",
         points: 0,
-        attendance: { monday: true, tuesday: false, wednesday: false, thursday: false, friday: false }
+        attendance: { monday: true, tuesday: true, wednesday: false, thursday: false, friday: false }
       },
       {
         name: "Pricila Pachary Tapullima",
@@ -95,7 +95,24 @@ export const groups: Group[] = [
       {
         name: "Sarai Duran Araujo",
         points: 0,
-        attendance: { monday: true, tuesday: false, wednesday: false, thursday: false, friday: false }
+        attendance: { monday: true, tuesday: true, wednesday: false, thursday: false, friday: false }
+      }
+    ]
+  },
+  {
+    name: "NEW",
+    color: "default",
+    totalPoints: 0,
+    members: [
+      {
+        name: "Abigail Ñañes",
+        points: 0,
+        attendance: { monday: false, tuesday: true, wednesday: false, thursday: false, friday: false }
+      },
+      {
+        name: "Aracely Abigail Pariona",
+        points: 0,
+        attendance: { monday: false, tuesday: true, wednesday: false, thursday: false, friday: false }
       }
     ]
   }
