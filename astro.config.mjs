@@ -4,4 +4,6 @@ import tailwind from '@astrojs/tailwind';
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind()],
+  site: 'https://jhorsax161616.github.io',
+  base: '/EBDV2026Adolescentes',
 });
