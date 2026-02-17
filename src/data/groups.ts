@@ -12,57 +12,90 @@ export interface Member {
 
 export interface Group {
   name: string;
+  color: string;
+  totalPoints: number;
   members: Member[];
 }
 
 export const groups: Group[] = [
   {
-    name: "Grupo 1",
+    name: "STARS",
+    color: "red",
+    totalPoints: 0,
     members: [
       {
-        name: "Juan Pérez",
-        points: 50,
-        attendance: { monday: true, tuesday: true, wednesday: false, thursday: true, friday: true }
+        name: "Grace Ayma Poma",
+        points: 0,
+        attendance: { monday: true, tuesday: false, wednesday: false, thursday: false, friday: false }
       },
       {
-        name: "María Gómez",
-        points: 45,
-        attendance: { monday: true, tuesday: true, wednesday: true, thursday: true, friday: true }
+        name: "Angela Quiliche Sosa",
+        points: 0,
+        attendance: { monday: true, tuesday: false, wednesday: false, thursday: false, friday: false }
       },
       {
-        name: "Carlos Ruiz",
-        points: 30,
-        attendance: { monday: false, tuesday: true, wednesday: true, thursday: false, friday: true }
+        name: "Angela Vargas Lopez",
+        points: 0,
+        attendance: { monday: true, tuesday: false, wednesday: false, thursday: false, friday: false }
+      },
+      {
+        name: "Cielo Felices Rojas",
+        points: 0,
+        attendance: { monday: true, tuesday: false, wednesday: false, thursday: false, friday: false }
       }
     ]
   },
   {
-    name: "Grupo 2",
+    name: "DIAMANTES",
+    color: "skyblue",
+    totalPoints: 50,
     members: [
       {
-        name: "Ana López",
-        points: 60,
-        attendance: { monday: true, tuesday: true, wednesday: true, thursday: true, friday: true }
+        name: "Denis Caceres Venegas",
+        points: 0,
+        attendance: { monday: true, tuesday: false, wednesday: false, thursday: false, friday: false }
       },
       {
-        name: "Luis Torres",
-        points: 40,
-        attendance: { monday: true, tuesday: false, wednesday: true, thursday: true, friday: false }
+        name: "Luz",
+        points: 0,
+        attendance: { monday: true, tuesday: false, wednesday: false, thursday: false, friday: false }
+      },
+      {
+        name: "Pricila Pachary Tapullima",
+        points: 0,
+        attendance: { monday: true, tuesday: false, wednesday: false, thursday: false, friday: false }
+      },
+      {
+        name: "Camila Gomez Vera",
+        points: 0,
+        attendance: { monday: true, tuesday: false, wednesday: false, thursday: false, friday: false }
       }
     ]
   },
   {
-    name: "Grupo 3",
+    name: "CORALES",
+    color: "lilac",
+    totalPoints: 0,
     members: [
       {
-        name: "Sofia Diaz",
-        points: 55,
-        attendance: { monday: true, tuesday: true, wednesday: true, thursday: true, friday: true }
+        name: "Luz",
+        points: 0,
+        attendance: { monday: true, tuesday: false, wednesday: false, thursday: false, friday: false }
       },
       {
-        name: "Pedro Sanchez",
-        points: 35,
-        attendance: { monday: false, tuesday: false, wednesday: true, thursday: true, friday: true }
+        name: "Sarai Albinagorta Gutierrez",
+        points: 0,
+        attendance: { monday: true, tuesday: false, wednesday: false, thursday: false, friday: false }
+      },
+      {
+        name: "Sefora Valladolid Huanay",
+        points: 0,
+        attendance: { monday: true, tuesday: false, wednesday: false, thursday: false, friday: false }
+      },
+      {
+        name: "Sarai Duran Araujo",
+        points: 0,
+        attendance: { monday: true, tuesday: false, wednesday: false, thursday: false, friday: false }
       }
     ]
   }
