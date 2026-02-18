@@ -31,7 +31,7 @@ export const groups: Group[] = [
       {
         name: "Angela Quiliche Sosa",
         points: 20,
-        attendance: { monday: true, tuesday: true, wednesday: false, thursday: false, friday: false }
+        attendance: { monday: true, tuesday: true, wednesday: true, thursday: false, friday: false }
       },
       {
         name: "Angela Vargas Lopez",
@@ -53,12 +53,12 @@ export const groups: Group[] = [
       {
         name: "Denis Caceres Venegas",
         points: 0,
-        attendance: { monday: true, tuesday: false, wednesday: false, thursday: false, friday: false }
+        attendance: { monday: true, tuesday: true, wednesday: false, thursday: false, friday: false }
       },
       {
         name: "Luz Maricielo Icanaque Serna",
         points: 0,
-        attendance: { monday: true, tuesday: true, wednesday: false, thursday: false, friday: false }
+        attendance: { monday: true, tuesday: true, wednesday: true, thursday: false, friday: false }
       },
       {
         name: "Pricila Pachary Tapullima",
@@ -68,7 +68,7 @@ export const groups: Group[] = [
       {
         name: "Camila Gomez Vera",
         points: 0,
-        attendance: { monday: true, tuesday: false, wednesday: false, thursday: false, friday: false }
+        attendance: { monday: true, tuesday: true, wednesday: false, thursday: false, friday: false }
       }
     ]
   },
@@ -105,7 +105,7 @@ export const groups: Group[] = [
     totalPoints: 0,
     members: [
       {
-        name: "Abigail Ñañes",
+        name: "Abigail Yañez Camarena",
         points: 0,
         attendance: { monday: false, tuesday: true, wednesday: false, thursday: false, friday: false }
       },
@@ -113,6 +113,16 @@ export const groups: Group[] = [
         name: "Aracely Abigail Pariona",
         points: 0,
         attendance: { monday: false, tuesday: true, wednesday: false, thursday: false, friday: false }
+      },
+      {
+        name: "Sebastian Zavaleta Juarez",
+        points: 0,
+        attendance: { monday: true, tuesday: true, wednesday: false, thursday: false, friday: false }
+      },
+      {
+        name: "Luis Fernando Jose Candiotti",
+        points: 0,
+        attendance: { monday: false, tuesday: false, wednesday: true, thursday: false, friday: false }
       }
     ]
   }
