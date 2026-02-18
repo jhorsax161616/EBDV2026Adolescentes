@@ -25,7 +25,7 @@ export const groups: Group[] = [
     members: [
       {
         name: "Grace Ayma Poma",
-        points: 0,
+        points: 10,
         attendance: { monday: true, tuesday: true, wednesday: true, thursday: false, friday: false }
       },
       {
@@ -57,7 +57,7 @@ export const groups: Group[] = [
       },
       {
         name: "Luz Maricielo Icanaque Serna",
-        points: 10,
+        points: 20,
         attendance: { monday: true, tuesday: true, wednesday: true, thursday: false, friday: false }
       },
       {
@@ -71,13 +71,13 @@ export const groups: Group[] = [
         attendance: { monday: true, tuesday: true, wednesday: true, thursday: false, friday: false }
       },
       {
-        name: "Abigail Yañez Camarena",
+        name: "Abigail Angelina Yañez Camarena",
         points: 0,
         attendance: { monday: false, tuesday: true, wednesday: true, thursday: false, friday: false }
       },
       {
         name: "Sebastian Zavaleta Juarez",
-        points: 0,
+        points: 10,
         attendance: { monday: true, tuesday: true, wednesday: true, thursday: false, friday: false }
       },
       {
@@ -93,8 +93,8 @@ export const groups: Group[] = [
     totalPoints: 30,
     members: [
       {
-        name: "Luz Mantari Ochoa",
-        points: 0,
+        name: "Luz Clarita Mantari Ochoa",
+        points: 20,
         attendance: { monday: true, tuesday: true, wednesday: true, thursday: false, friday: false }
       },
       {
