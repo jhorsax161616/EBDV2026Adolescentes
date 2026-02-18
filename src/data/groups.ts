@@ -26,7 +26,7 @@ export const groups: Group[] = [
       {
         name: "Grace Ayma Poma",
         points: 0,
-        attendance: { monday: true, tuesday: true, wednesday: false, thursday: false, friday: false }
+        attendance: { monday: true, tuesday: true, wednesday: true, thursday: false, friday: false }
       },
       {
         name: "Angela Quiliche Sosa",
@@ -36,12 +36,12 @@ export const groups: Group[] = [
       {
         name: "Angela Vargas Lopez",
         points: 0,
-        attendance: { monday: true, tuesday: true, wednesday: false, thursday: false, friday: false }
+        attendance: { monday: true, tuesday: true, wednesday: true, thursday: false, friday: false }
       },
       {
-        name: "Cielo Felices Rojas",
+        name: "Nicol Cielo Felices Rojas",
         points: 0,
-        attendance: { monday: true, tuesday: false, wednesday: false, thursday: false, friday: false }
+        attendance: { monday: true, tuesday: false, wednesday: true, thursday: false, friday: false }
       }
     ]
   },
@@ -53,22 +53,22 @@ export const groups: Group[] = [
       {
         name: "Denis Caceres Venegas",
         points: 0,
-        attendance: { monday: true, tuesday: true, wednesday: false, thursday: false, friday: false }
-      },
-      {
-        name: "Luz Maricielo Icanaque Serna",
-        points: 0,
         attendance: { monday: true, tuesday: true, wednesday: true, thursday: false, friday: false }
       },
       {
-        name: "Pricila Pachary Tapullima",
+        name: "Luz Maricielo Icanaque Serna",
+        points: 20,
+        attendance: { monday: true, tuesday: true, wednesday: true, thursday: false, friday: false }
+      },
+      {
+        name: "Priscila Valentina Pachari Tapullima",
         points: 0,
-        attendance: { monday: true, tuesday: false, wednesday: false, thursday: false, friday: false }
+        attendance: { monday: true, tuesday: false, wednesday: true, thursday: false, friday: false }
       },
       {
         name: "Camila Gomez Vera",
         points: 0,
-        attendance: { monday: true, tuesday: true, wednesday: false, thursday: false, friday: false }
+        attendance: { monday: true, tuesday: true, wednesday: true, thursday: false, friday: false }
       }
     ]
   },
@@ -78,9 +78,9 @@ export const groups: Group[] = [
     totalPoints: 0,
     members: [
       {
-        name: "Luz",
+        name: "Luz Mantari Ochoa",
         points: 0,
-        attendance: { monday: true, tuesday: false, wednesday: false, thursday: false, friday: false }
+        attendance: { monday: true, tuesday: true, wednesday: true, thursday: false, friday: false }
       },
       {
         name: "Sarai Albinagorta Gutierrez",
@@ -95,7 +95,7 @@ export const groups: Group[] = [
       {
         name: "Sarai Duran Araujo",
         points: 0,
-        attendance: { monday: true, tuesday: true, wednesday: false, thursday: false, friday: false }
+        attendance: { monday: true, tuesday: true, wednesday: true, thursday: false, friday: false }
       }
     ]
   },
@@ -107,7 +107,7 @@ export const groups: Group[] = [
       {
         name: "Abigail Yañez Camarena",
         points: 0,
-        attendance: { monday: false, tuesday: true, wednesday: false, thursday: false, friday: false }
+        attendance: { monday: false, tuesday: true, wednesday: true, thursday: false, friday: false }
       },
       {
         name: "Aracely Abigail Pariona",
@@ -117,10 +117,15 @@ export const groups: Group[] = [
       {
         name: "Sebastian Zavaleta Juarez",
         points: 0,
-        attendance: { monday: true, tuesday: true, wednesday: false, thursday: false, friday: false }
+        attendance: { monday: true, tuesday: true, wednesday: true, thursday: false, friday: false }
       },
       {
         name: "Luis Fernando Jose Candiotti",
+        points: 0,
+        attendance: { monday: false, tuesday: false, wednesday: true, thursday: false, friday: false }
+      },
+      {
+        name: "Adriano Martinez Rojas",
         points: 0,
         attendance: { monday: false, tuesday: false, wednesday: true, thursday: false, friday: false }
       }
